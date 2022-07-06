@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head　th:fragment="head(meta,title,link)">
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+
+<body>
+	<header th:fragment="frag_header">
+		<h1>XXXXXX</h1>
+
+		<nav class="gnav">
+			<ul class="gnav_wrapper">
+				<li><a th:href="@{/horse}">トップ</a></li>
+				<li><a href="#">ニュース</a></li>
+				<li><a th:href="@{/horse/race}">レース</a></li>
+				<li><a href="#">予想</a></li>
+				<li><a href="#">コラム</a></li>
+				<li><a th:href="@{/horse/bord}">掲示板</a></li>
+				<li><a th:href="@{/horse/profile}">データベース</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+
+</html>

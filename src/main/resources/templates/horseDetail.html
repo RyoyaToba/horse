@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>掲示板</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+
+<body>
+	<header th:insert="fragment-part::frag_header">
+	</header>
+	<table>
+		<tr>
+			<img th:src="@{/image/} + ${horseProfile.name} + .jpeg"
+				style="height:120px; width:auto; float:right; "><br />
+			<td th:text=${horseProfile.name}></td>
+			<td th:text=${horseProfile.birthYear}></td> 
+			<td th:text=${horseProfile.gender}></td> 
+			<td th:text=${horseProfile.father}></td> 
+			<td th:text=${horseProfile.mother}></td>  <br>
+		</tr>
+	</table>
+</body>
+
+</html>

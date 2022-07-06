@@ -1,0 +1,106 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,*::before,*::after{box-sizing:border-box}*{margin:0}html,body{height:100%}body{line-height:1.5;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#__next{isolation:isolate}
+
+header{
+	width:100%;
+	padding:10px 0;
+}
+
+.main{
+	padding:0 20px;
+}
+
+.gnav{
+	width: 100%;
+    background-color: #333;
+}
+.gnav_wrapper{
+	background: #c71500;
+	padding: 0;
+	text-align: center;
+	display:flex;
+}
+.gnav_wrapper li{
+    border-left: #888 1px solid;
+    text-align: center;
+    width: calc(100%/7);
+    transition: all  0.3s ease;
+    list-style-type: none;
+}
+.gnav_wrapper li:last-child{
+    border-right: #888 1px solid;
+}
+.gnav_wrapper li:hover{
+    background-color: #888;
+}
+.gnav_wrapper li a{
+    display: block;
+    padding: 1.3em 0;
+    color: #fff;
+    text-decoration: none;
+}
+h1{
+	font-size: 40px;
+	color:black;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	font-family: Meiryo UI;
+	}
+	
+div.wrapper{
+	display:flex;
+	margin-top: 30px;
+}
+
+div.left{
+	margin-top: 30px;
+	width:15%;
+}
+
+div.searchOne{
+	margin-right:10px;
+}
+
+div.searchTwo{
+	margin-right:10px;
+}
+
+div.center{
+	width:70%;
+	margin-top: 30px;
+	height:500px;
+	background-color: blue;
+	margin-top: 30px;
+}
+
+div.right{
+	width:15%;
+	height:500px;
+	margin-top: 30px;
+	background-color: orange;
+	margin-top: 30px;
+}
+
+footer{
+	width:auto;
+	height:auto;
+	height:150px;
+	background-color: yellow;
+}
+
+.horseProfile{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.info-ulist{
+	width:25%;
+	margin-top:20px;
+}
+
+.profileInfo{
+	list-style-type: none;
+}

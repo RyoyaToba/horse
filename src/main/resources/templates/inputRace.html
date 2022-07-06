@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>レース検索</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+	<link th:href="@{/css/style2.css}" rel="stylesheet">
+</head>
+
+<body>
+	<header th:insert="fragment-part::frag_header">
+	</header>
+
+
+	<form th:action="@{/horse/execute4}" method="post" th:fragment="race_result">
+		名前：
+		<input type="text" name="name"><br>
+		性別：
+		<input type="checkbox" name="gender">牡馬
+		<input type="checkbox" name="gender">牝馬
+		<input type="checkbox" name="gender">セン馬<br>
+		<button>検索</button>
+	</form>
+	<h2>レース結果</h2>
+	<table>
+		<tr>
+			<th>レースID</th>
+			<th>着順</th>
+			<th>枠順</th>
+			<th>馬番</th>
+			<th>名前</th>
+			<th>性</th>
+			<th>年齢</th>
+			<th>斤量</th>
+			<th>氏名</th>
+			<th>タイム</th>
+		</tr>
+		<tr th:each="raceResult : ${raceResultList}">
+			<td th:text="${raceResult.raceId}"></td>
+			<td th:text="${raceResult.rank}"></td>
+			<td th:text="${raceResult.waku}"></td>
+			<td th:text="${raceResult.horseNumber}"></td>
+			<td th:text="${raceResult.horseName}"></td>
+			<td th:text="${raceResult.gender}"></td>
+			<td th:text="${raceResult.age}"></td>
+			<td th:text="${raceResult.jockeyWeight}"></td>
+			<td th:text="${raceResult.jockeyName}"></td>
+			<td th:text="${raceResult.raceTime}"></td>
+		</tr>
+	</table>
+
+</body>
+
+</html>

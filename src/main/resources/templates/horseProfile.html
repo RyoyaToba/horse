@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>馬検索</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+	<link th:href="@{/css/style2.css}" rel="stylesheet">
+</head>
+
+<body>
+	<header th:insert="fragment-part::frag_header">
+	</header>
+	<div class="main">
+		<div>好きな名前を入れてください:</div>
+		<form th:action="@{/horse/horse-profile}" method="post">
+			<input type="text" name="name"><br>
+			<button>曖昧検索</button>
+		</form>
+		<div class="horseProfile">
+			<ul th:each="profile : ${profileList}" class="info-ulist">
+				<li class="profileInfo">
+					<a th:href="@{/horse/horse-detail/?(id=${profile.id})}">
+						<div th:text=${profile.name}>name
+					</a>
+					<img th:src="@{/image/} + ${profile.name} + .jpeg"
+						style="height:120px; width:auto; float:right; "><br />
+					年：<span th:text=${profile.birthYear}></span><br />
+					性：<span th:text=${profile.gender}></span><br />
+					父：<span th:text=${profile.father}></span><br />
+					母：<span th:text=${profile.mother}></span> <br />
+					<hr />
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
