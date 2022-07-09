@@ -17,6 +17,8 @@
 
 * [トップ画面](/src/main/resources/templates/index.html)　途中
 
+![indexPage](/documents/indexPage.png)
+
 * [競走馬検索システム](/src/main/resources/templates/horseProfile.html) 途中
 
 * [レース結果検索システム](/src/main/resources/templates/inputRace.html) 途中
