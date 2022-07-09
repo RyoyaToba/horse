@@ -48,7 +48,7 @@ public class HorseController {
 	@RequestMapping("")
 	public String index() {
 //		throw new RuntimeErrorException(null, null);
-		return "inde";
+		return "index";
 	}
 
 	/**

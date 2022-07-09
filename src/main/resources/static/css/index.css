@@ -1,0 +1,61 @@
+
+.conteiner{
+	display:flex;
+	margin-right:auto;
+	margin-left:auto;
+	width:600px;
+}
+
+.center{
+	margin-right:30px;
+}
+
+.nowRaceBox{	
+	width:600px;
+	margin-bottom:30px;
+}
+
+.nowRaceContents{
+	display:flex;
+	justify-content:space-between;
+	border:solid 1px ;
+	padding:10px;
+}
+
+.nowRace{
+	margin-right:20px;
+	border:solid 1px ;
+	padding:10px;
+}
+
+.article{
+	width:600px;
+	
+}
+
+.title{
+	font-size: 20px;
+}
+.article_contents{
+}
+
+.article_img {
+	width:300px; 
+	height:auto;
+}
+
+.article_table{
+	margin-top:10px;
+}
+
+.article_table td{
+	border-top:solid 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.right_contents1{
+	width:300px;
+	height:250px;
+	background-image:url("../anthorImg/webディレクター募集.png");
+}

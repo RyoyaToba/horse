@@ -7,13 +7,68 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>トップページ</title>
 	<link th:href="@{/css/style.css}" rel="stylesheet">
+	<link th:href="@{/css/index.css}" rel="stylesheet">
 </head>
 
 <body>
-	<header th:insert="fragment-part::frag_header">
+	<header th:insert="fragment-part::frag_header"></header>
+	<div class="conteiner">
+		<!--レース速報-->
+		<div class="center">
+			<div class="nowRaceBox">
+				<div>Live速報</div>
+				<div class="nowRaceContents">
+					<div class="nowRace">福島<br />
+						<p>２歳新馬戦</p>
+					</div>
+					<div class="nowRace">中山<br />
+						<p>２歳新馬戦</p>
+					</div>
+					<div class="nowRace">東京<br />
+						<p>２歳新馬戦</p>
+					</div>
+				</div>
+			</div>
+			<!--記事-->
+			<div class="article">
+				<a>
+					<p class="title">【今日の注目ポイント】函館でダートOP・マリーンS、キングエルメスが英ジュライC出走など</p>
+				</a>
+				<div class="article_contents">
+					　7/9(土)は福島・小倉・函館の3場開催。8日正午の馬場発表は福島が芝良・ダート稍重、小倉と函館が芝・ダート共に良。9日の天気は福島と函館が曇り時々雨、小倉が曇りのち晴れの予報となっている。
+				</div>
+				<img src="/anthorimg/article.jpeg" class="article_img" />
 
-	</header>
+				<table class="article_table">
+					<tr>
+						<td>【小倉5R新馬戦結果】6番人気タマモブラックタイが早め先頭から押し切る</td>
+					</tr>
+					<tr>
+						<td>【函館5R新馬戦結果】アスクドリームモアが抜け出してデビュー勝ち</td>
+					</tr>
+					<tr>
+						<td>【ＰＯＧ】「すごくバネがある」ホウオウジュビリー１７日福島で初陣Ｖ</td>
+					</tr>
+					<tr>
+						<td>【福島6R新馬戦結果】シルヴァーゴーストが馬の間から抜け出す</td>
+					</tr>
+					<tr>
+						<td>【福島5R新馬戦結果】ダノンバラード産駒マイネルズーメンが勝利</td>
+					</tr>
+				</table>
+			</div>
+			<!--今週の注目レース-->
+			<div class="weekly_main_race">
+				<div>今週の注目レース</div>
+			</div>
+		</div>
 
+		<div class="right_contents">
+			<a href="#">
+				<div class="right_contents1"></div>
+			</a>
+		</div>
+	</div>
 </body>
 
 </html>
