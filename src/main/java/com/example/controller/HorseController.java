@@ -51,6 +51,11 @@ public class HorseController {
 		return "index";
 	}
 
+	@RequestMapping("/news")
+	public String news() {
+		return "news";
+	}
+
 	/**
 	 * レース検索画面へ遷移
 	 * 
