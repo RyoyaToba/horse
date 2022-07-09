@@ -3,15 +3,15 @@
 	display:flex;
 	margin-right:auto;
 	margin-left:auto;
-	width:600px;
+	width:900px;
 }
 
 .center{
-	margin-right:30px;
+	width:600px;
+	margin-right:35px;
 }
 
 .nowRaceBox{	
-	width:600px;
 	margin-bottom:30px;
 }
 
@@ -30,7 +30,12 @@
 
 .article{
 	width:600px;
-	
+}
+
+.letter{
+	display:flex;
+	border-bottom:dotted 1px;
+	padding-bottom:10px;
 }
 
 .title{
@@ -40,22 +45,56 @@
 }
 
 .article_img {
-	width:300px; 
-	height:auto;
+	width:270px; 
+	height:200px;
+	margin-left:10px;
 }
 
 .article_table{
-	margin-top:10px;
 }
 
 .article_table td{
-	border-top:solid 1px;
+	border-bottom:dotted 1px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	width:600px;
+}
+
+.weekly_main_race{
+	margin-top:50px;
+}
+
+.main_race_view{
+	width:600px;
+	height:670px;
+	background-color: gray;
 }
 
 .right_contents1{
 	width:300px;
 	height:250px;
-	background-image:url("../anthorImg/webディレクター募集.png");
+	margin-bottom:20px;
 }
+
+.right_contents2{
+	width:300px;
+	height:95px;
+	margin-bottom:20px;
+	background-color: gray;
+}
+
+.right_contents3{
+	width:300px;
+	height:310px;
+	background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+

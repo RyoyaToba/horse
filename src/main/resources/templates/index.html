@@ -31,14 +31,17 @@
 			</div>
 			<!--記事-->
 			<div class="article">
-				<a>
-					<p class="title">【今日の注目ポイント】函館でダートOP・マリーンS、キングエルメスが英ジュライC出走など</p>
-				</a>
-				<div class="article_contents">
-					　7/9(土)は福島・小倉・函館の3場開催。8日正午の馬場発表は福島が芝良・ダート稍重、小倉と函館が芝・ダート共に良。9日の天気は福島と函館が曇り時々雨、小倉が曇りのち晴れの予報となっている。
+				<div class="letter">
+					<div class="article_contents">
+						<a>
+							<p class="title">【今日の注目ポイント】函館でダートOP・マリーンS、キングエルメスが英ジュライC出走など</p>
+						</a>
+						　<p class="content">
+							7/9(土)は福島・小倉・函館の3場開催。8日正午の馬場発表は福島が芝良・ダート稍重、小倉と函館が芝・ダート共に良。9日の天気は福島と函館が曇り時々雨、小倉が曇りのち晴れの予報となっている。
+						</p>
+					</div>
+					<img src="/anthorimg/article.jpeg" class="article_img" />
 				</div>
-				<img src="/anthorimg/article.jpeg" class="article_img" />
-
 				<table class="article_table">
 					<tr>
 						<td>【小倉5R新馬戦結果】6番人気タマモブラックタイが早め先頭から押し切る</td>
@@ -56,17 +59,27 @@
 						<td>【福島5R新馬戦結果】ダノンバラード産駒マイネルズーメンが勝利</td>
 					</tr>
 				</table>
+				<a th:href="@{horseNews}">
+					<div>一覧を見る&nbsp;▶︎</div>
+				</a>
 			</div>
 			<!--今週の注目レース-->
 			<div class="weekly_main_race">
-				<div>今週の注目レース</div>
+				<h3>今週の注目レース</h3>
+				<div class="main_race_view"></div>
 			</div>
 		</div>
 
 		<div class="right_contents">
 			<a href="#">
-				<div class="right_contents1"></div>
+				<div class="right_contents1">
+					<img th:src="@{/anthorImg/webディレクター募集.png}">
+				</div>
 			</a>
+			<div class="right_contents2">
+			</div>
+			<div class="right_contents3">
+			</div>
 		</div>
 	</div>
 </body>
